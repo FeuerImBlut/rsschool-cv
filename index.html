@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>CV Alexander Golubovich</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+
+	<header>
+
+		<img class="avatar" src="pictures/av.png" alt="photo">
+		<div>
+			<h1>Alexander Golubovich</h1>
+			<h4>Front-end Developer</h4>
+		</div>
+	</header>
+	<main>
+	<div class="container">
+		<div class="left-side">
+			<div class="section-title">
+				<h2>Contacts</h2>
+			</div>
+			<ul class="contacts">
+				<li>Address: Belarus, Minsk</li>
+				<li>Phone: +375 (44)792-00-43</li>
+				<li>Email: golubovich.as@gmail.com</li>
+			</ul>
+
+			<div class="section-title">
+				<h2>Languages</h2>
+			</div>
+			<ul class="contacts">
+				<li>Russian: Native</li>
+				<li>English: B1+</li>
+				<li>German: A1</li>
+			</ul>
+			<div class="section-title">
+				<h2>Skills</h2>
+			</div>
+			<ul class="contacts">
+				<li>HTML5, CSS</li>
+				<li>Javascript</li>
+				<li>Git, Github</li>
+			</ul>
+		</div>
+		<div class="right-side">
+			<div class="section-title">
+				<h2>About Me</h2>
+			</div>
+			<div class="main-text"> A system administrator intending to become a Front-end developer.</div>
+
+			<div class="section-title">
+				<h2>Work Experience</h2>
+			</div>
+			<div>
+				<h3>2015 – present<br>
+					System Administrator at JSC "Promagroleasing, Minsk, Belarus</h3>
+				<ul class="main-text">
+					<li>upkeep, configuration, and maintaining LAN, user PC's, servers, PBX, MFD and printers;</li>
+					<li>ensuring information security</li>
+					<li>tech support (resolving user issues);</li>
+					<li>purchasing equipment and inventory managment.</li>
+				</ul>
+
+				<h3>2014 – 2015<br>
+					EC&I engineer at Hockey club "Yunost-Minsk", Minsk, Belarus</h3>
+				<ul class="main-text">
+					<li>installing, managing and maintaining equipment which is used to monitor and control engineering
+						systems, machinery and processes (Hockey Stadium ICS).</li>
+				</ul>
+
+				<h3>2013 – 2014<br>
+					Junior PLC programmer at Unitary Enterprise "Kvant-AS", Minsk, Belarus</h3>
+				<ul class="main-text">
+					<li>installation and start-up works of Industrial control systems;</li>
+					<li>programming PLC (Allen-Bradley).</li>
+				</ul>
+			</div>
+
+			<div class="section-title">
+				<h2>Education</h2>
+			</div>
+			<ul>
+				<li>
+					<h3>2008 – 2013
+						Belarusian National Technical University, Minsk, Belarus<br>
+						Bachelor
+						<span>"Information Systems and Technologies (major in Information Processing and
+							Displaying)"</span>
+					</h3>
+				</li>
+				<li>
+					<h3>July 2021 - September 2021 JS / Front-end Stage0</h3>
+				</li>
+			</ul>
+
+			<div class="section-title">
+				<h2>My code example</h2>
+			</div>
+			<pre><code class="code-example language-jsx">
+function indexEqualsValue(a) {
+    let result = -1;
+    let theCycle = (begin, end, result, a) => {
+        if (begin > end) {
+            return result;
+        } else {
+            let mid = Math.floor(begin - ((begin - end) / 2));
+            if (a[mid] == mid) {
+                result = mid;
+                return theCycle(begin, mid - 1, result, a);
+            } else if (a[mid] > mid) {
+                return theCycle(begin, mid - 1, result, a);
+            } else {
+                return theCycle(mid + 1, end, result, a);
+            }
+        }
+    }
+    return theCycle(0, a.length - 1, result, a);
+}
+</code></pre>
+
+			<div class="section-title">
+				<h2>My projects</h2>
+			</div>
+			<div class="main-text">A clock with arrows on JS. Can be switched to dark theme</div>
+			<a href="https://feuerimblut.github.io/JS30-task/JS-Clock/"><img class="project-logo"
+					src="pictures/proj-picture.png" alt="rs-school logo"></a>
+
+		</div>
+	</div>
+	</main>>
+	<footer>
+		<a href="https://github.com/FeuerImBlut"><img class="github-logo" src="pictures/logo-github.png"
+				alt="github logo"></a>
+
+
+		<time datetime="2021-09-20">2021</time>
+
+		<a href="https://rs.school/js/"><img class="rslogo" src="https://rs.school/images/rs_school_js.svg"
+				alt="rs-school logo"></a>
+	</footer>
+</body>
+
+</html>

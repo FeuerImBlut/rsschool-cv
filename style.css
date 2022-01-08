@@ -1,0 +1,163 @@
+:root {
+	--bg-color: lavender;
+	--text-color: #481d30;
+	--color-one: #9494d0; /*blue-gray*/
+	--color-two: darkorange;
+}
+
+html {
+	background-color: white;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	font-size: 30px;
+}
+
+body {
+	margin: auto;
+	box-shadow: 10px 5px 5px black;
+	width: 1000px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-weight: 700;
+}
+
+footer {
+	background-color: var(--color-one);
+	justify-content: space-evenly;
+	align-items: center;
+	height: 120px;
+	display: flex;
+	flex-direction: row;
+	color: indigo;
+	font-size: 36px;
+	vertical-align:middle;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.left-side {
+	width:30%;
+	background-color: var(--color-one);
+}
+
+.right-side {
+	width:70%;
+	background-color: var(--bg-color);
+}
+
+.avatar {
+margin: 20px 20px;
+height: 288px;
+width: 288px;
+border-radius: 5%;
+}
+
+.rslogo {
+margin-left: 10px;
+width: 128px;
+}
+
+.project-logo {
+	width: 160px;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+.github-logo {
+	width: 64px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Collegia";
+}
+
+h1 {
+margin-top: 80px;
+margin-left: 20px;
+font-size: 50px;
+margin-bottom:0;
+}
+
+h2 {
+margin: 0;
+}
+
+h3 {
+margin-left: 40px;
+}
+
+h4 {
+margin-top:0;
+margin-left: 20px;
+margin-bottom:0;
+}
+
+
+
+.main-text {
+margin-left: 40px;
+margin-right: 30px;
+font-family: "Cambria";
+font-size:18px;
+font-weight: bold;
+}
+
+.code-example {
+	font-size: 14px;
+	font-family: Lucida Console;
+}
+
+.section-title {
+	position: relative;
+	margin-top:10px;
+	margin-bottom: 18px;
+	padding-left: 30px;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 600;
+}
+
+.section-title::before {
+  width: 5em;
+  height: 10em;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 36px;
+    background-color: var(--color-two);
+}
+
+.contacts {
+	font-family: "Verdana";
+	list-style: square;
+	margin: 0px 60px 20px 40px;
+	padding: 0;
+	line-height:1.5;
+}
+
+.left-side .section-title {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.right-side .section-title {
+    background-color: rgba(115, 115, 245, 0.5);
+}
+
+@font-face {
+font-family: "Collegia"; 
+src: url("fonts/COLLEGIA.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
