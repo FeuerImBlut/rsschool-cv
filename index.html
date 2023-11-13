@@ -97,15 +97,15 @@
 			<pre><code class="code-example language-jsx">
 function indexEqualsValue(a) {
     let result = -1;
-    let theCycle = (begin, end, result, a) => {
-        if (begin &gt end) {
+    let theCycle = (begin, end, result, a) = {
+        if (begin gt end) {
             return result;
         } else {
             let mid = Math.floor(begin - ((begin - end) / 2));
             if (a[mid] == mid) {
                 result = mid;
                 return theCycle(begin, mid - 1, result, a);
-            } else if (a[mid] &gt mid) {
+            } else if (a[mid] gt mid) {
                 return theCycle(begin, mid - 1, result, a);
             } else {
                 return theCycle(mid + 1, end, result, a);
