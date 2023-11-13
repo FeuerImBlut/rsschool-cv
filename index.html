@@ -27,8 +27,8 @@
 			</div>
 			<ul class="contacts">
 				<li>Address: Belarus, Minsk</li>
-				<li>Phone: +375 (44)792-00-43</li>
-				<li>Email: golubovich.as@gmail.com</li>
+				<li>Phone: +375 (**)***-**-**</li>
+				<li>Email: gol****@gmail.com</li>
 			</ul>
 
 			<div class="section-title">
@@ -98,14 +98,14 @@
 function indexEqualsValue(a) {
     let result = -1;
     let theCycle = (begin, end, result, a) => {
-        if (begin > end) {
+        if (begin &gt end) {
             return result;
         } else {
             let mid = Math.floor(begin - ((begin - end) / 2));
             if (a[mid] == mid) {
                 result = mid;
                 return theCycle(begin, mid - 1, result, a);
-            } else if (a[mid] > mid) {
+            } else if (a[mid] &gt mid) {
                 return theCycle(begin, mid - 1, result, a);
             } else {
                 return theCycle(mid + 1, end, result, a);
